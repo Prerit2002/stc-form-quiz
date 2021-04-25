@@ -1,0 +1,55 @@
+.container{
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius:10px;
+       
+}
+.form {
+    position: relative;
+    max-width: 80%;
+    justify-content: center;
+    margin:0 auto
+}
+
+input{
+    width: 80%;
+    border: 0;
+    border-radius:5px;
+    margin-bottom: 1px;
+    padding: 20px 20px 20px 50px;
+    background: #59d6dfec;
+      
+
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 20px 0 5px 5px;
+    background: #41D873;
+    color: white;
+    border: 0;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+img{
+    position: relative;
+    left: 1vw;
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin:0 auto;
+    padding-bottom: 10px;
+    padding-top:10px
+    
+
+}
+.result{
+    padding-bottom: 5px;
+}
+body{
+    background-color: #c7c5e2;
+}
