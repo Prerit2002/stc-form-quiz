@@ -2,8 +2,8 @@ const forms = document.querySelector('.form')
 const result = document.querySelector('.result')
 
 forms.addEventListener("submit", function (e)  {
-    e.preventDefault();
     result.innerText = ""
+    e.preventDefault();
     const emailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ 
     const {Mobile , name ,Register , DOB , email} = this.elements
     console.log(email.value.length)
@@ -34,6 +34,16 @@ forms.addEventListener("submit", function (e)  {
    }
 
    if (result.innerText === ""){
+    const student = {
+        name:name.value,
+        Mobile:Mobile.value,
+        Register:Register.value,
+        email:email.value,
+        DOB:DOB.value,
+
+    }
+    console.log(student)
+
     const para = document.createElement('h4')
     para.innerText = 'Success, Your form has been submitted'
      result.appendChild(para)
@@ -43,9 +53,10 @@ forms.addEventListener("submit", function (e)  {
 
 })
 
+
 function submitform(){
-    document.forms.submit();
-    document.forms.reset();
+    document.forms.submit()
+    return false
 }
 
 
